@@ -1,12 +1,12 @@
 '.text.html':
   'v:asset.prefetch':
     'prefix': 'v:asset.prefetch'
-    'body': """<v:asset.prefetch domains="${1:REQUIRED!}" path="${2:PATH}" external="${3:1}" name="${4:NULL}" overwrite="${5:1}" dependencies="${6:NULL}" group="${7:'fluid'}" debug="${8:1}" standalone="${9:1}" rewrite="${10:1}" fluid="${11:1}" variables="${12:[mixed]}" allowMoveToFooter="${13:1}" movable="${14:1}" trim="${15:1}" namedChunks="${16:1}" protocol="${17:NULL}" protocolSeparator="${18:'//'}" force="${19:1}" content="${20:NULL}">
+    'body': """<v:asset.prefetch domains="${1:REQUIRED!}" path="${2:Path to file}" external="${3:1}" name="${4:NULL}" overwrite="${5:1}" dependencies="${6:NULL}" group="${7:'fluid'}" debug="${8:1}" standalone="${9:1}" rewrite="${10:1}" fluid="${11:1}" variables="${12:[mixed]}" allowMoveToFooter="${13:1}" movable="${14:1}" trim="${15:1}" namedChunks="${16:1}" protocol="${17:NULL}" protocolSeparator="${18:'//'}" force="${19:1}" content="${20:NULL}">
 	${21:<!-- tag content - may be ignored! -->}
 </v:asset.prefetch>"""
   'v:asset.style':
     'prefix': 'v:asset.style'
-    'body': """<v:asset.style path="{f:uri.resource(path: 'Css/${1:FILENAME}.css')}" name="${2:NULL}" content="${3:NULL}" external="${4:1}" overwrite="${5:1}" dependencies="${6:NULL}" group="${7:'fluid'}" debug="${8:1}" standalone="${9:1}" rewrite="${10:1}" fluid="${11:1}" variables="${12:[mixed]}" movable="${13:1}" trim="${14:1}" namedChunks="${15:1}">
+    'body': """<v:asset.style path="{f:uri.resource(path: '${1:Path to file}')}" name="${2:NULL}" content="${3:NULL}" external="${4:1}" overwrite="${5:1}" dependencies="${6:NULL}" group="${7:'fluid'}" debug="${8:1}" standalone="${9:1}" rewrite="${10:1}" fluid="${11:1}" variables="${12:[mixed]}" movable="${13:1}" trim="${14:1}" namedChunks="${15:1}">
 	${17:<!-- tag content - may be ignored! -->}
 </v:asset.style>"""
   'v:asset.script':
